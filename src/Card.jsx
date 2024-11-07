@@ -1,12 +1,11 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
-
-function Card() {
+function Card({ nombre, descripcion }) {
   return (
     <div>
-      <h2>Esto es un componente</h2>
+      <h2>Personaje de Breaking Bad</h2>
+      <p>Nombre: {nombre}</p>
+      <p>Descripción: {descripcion}</p>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card
